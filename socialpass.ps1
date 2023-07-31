@@ -23,7 +23,7 @@ public class NotepadScript
     public static void Main()
     {
         string filePath = Path.Combine(Path.GetTempPath(), "notepad_script.txt");
-        File.WriteAllText(filePath, "Your_Pass");
+        File.WriteAllText(filePath, "Your Password = 269314514justhackedon.tech_update");
         System.Diagnostics.Process.Start("notepad.exe", filePath);
     }
 }
